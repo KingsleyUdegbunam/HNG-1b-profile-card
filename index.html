@@ -11,23 +11,27 @@
 </head>
 
 <body>
-  <article style="padding: 2rem;" data-test-id="test-profile-card" class="card-container">
+  <article data-test-id="test-profile-card" class="card-container">
+    <div class="time-container"><span>🕰️ EPOCH: </span>
+      <time data-test-id="test-user-time" class="time-display" datetime="" aria-live="polite">
+
+      </time>
+    </div>
 
     <figure class="image-container">
-      <img src="" alt="">
-      <figcaption>Hello 👋🏽</figcaption>
+      <img data-test-id="test-user-avatar" src="assets/avatar.jpeg" alt="User image">
     </figure>
 
     <div class="about">
-      <h2 data-test-id="test-user-name" class="user-name">Kingsley Udegbunam</h2>
-      <p data-test-id="test-user-bio" class="user-bio">Frontend developer in training, building with HTML, CSS, and
-        real-world projects.
-        Always learning, improving, and exploring new ways to grow into frontend development.</p>
+      <h2 data-test-id="test-user-name" class="user-name" aria-label="My name">Kingsley Udegbunam</h2>
+      <p data-test-id="test-user-bio" class="user-bio"> A creative Frontend Developer focused on building sleek
+        experiences that transforms simple websites into something extraordinary.</p>
     </div>
 
     <p class="timer"></p>
 
-    <section class="hobbies">
+    <section data-test-id="test-user-hobbies" class="hobbies">
+      <h3 class="likes-header">Hobbies</h3>
       <ul>
         <li>Reading 📖</li>
         <li>Cooking 👨🏽‍🍳</li>
@@ -36,17 +40,32 @@
       </ul>
 
     </section>
-    <section class="dislikes">
+    <section data-test-id="test-user-dislikes" class="dislikes">
+      <h3 class="likes-header">Dislikes</h3>
       <ul>
-        <li>Hard Code Bugs 🐛</li>
-        <li>Hard Code Bugs 🐛</li>
-        <li>Hard Code Bugs 🐛</li>
+        <li>Tricky Bugs 🐛</li>
+        <li>Chaos 👀</li>
+        <li>Cold Coffee ☕</li>
       </ul>
     </section>
-    <ul class="social-links">
-      <li><a href="https://www.linkedin.com/in/kingsley-udegbunam/">LinkedIn</a></li>
-      <li> <a href="">Dev.to</a></li>
-    </ul>
+
+    <section>
+      <h3 class="likes-header">Socials</h3>
+
+      <ul data-test-id="test-user-social-links" class="social-links">
+        <li data-test-id="test-user-social-linkedin"><a target="_blank" rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/kingsley-udegbunam/"><img src="assets/linkedin.svg" alt="">
+            LinkedIn</a>
+        </li>
+
+        <li data-test-id="test-user-social-instagram"><a target="_blank" rel="noopener noreferrer" href=""><img
+              src="assets/instagram.svg" alt="">
+            <span>Instagram</span></a></li>
+        <li data-test-id="test-user-social-dev"><a target="_blank" rel="noopener noreferrer" href=""><img
+              src="assets/dev-to.svg" alt=""> <span>Dev.to</span></a>
+        </li>
+      </ul>
+    </section>
   </article>
 
 
