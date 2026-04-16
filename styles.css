@@ -2,6 +2,7 @@
 
 :root {
   --card-bg-clr: rgb(26, 26, 26);
+  --border-color: rgb(129, 129, 129);
 }
 
 body {
@@ -11,22 +12,19 @@ body {
 
 /* CONTAINERS */
 .card-container {
-  padding: 4rem 1rem;
+  max-width: 850px;
+  padding: 3rem 1rem;
   margin: 0 auto;
 }
 
 .time-container {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
   padding: 0.5rem;
 
   text-align: center;
   font-size: 0.65rem;
 
-  background-color: var(--card-bg-clr);
+  background-color: saddlebrown;
+  border-radius: 1rem;
   color: white;
 }
 
@@ -46,6 +44,15 @@ body {
 
 section {
   padding-block: 1.5rem;
+  border-block-end: 1px solid var(--border-color);
+}
+
+section:last-child {
+  border-block-end: none;
+}
+
+.mid-sections > *:last-child {
+  border-block-end: 1px solid var(--border-color);
 }
 
 /* AVATAR */
@@ -78,6 +85,16 @@ h3 {
   padding-block: 1.5rem;
 }
 
+.role-gmail {
+  color: rgb(136, 136, 136);
+}
+.role,
+.mail {
+  color: saddlebrown;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
 /* LISTS */
 ul {
   display: grid;
@@ -91,14 +108,15 @@ ul {
 }
 
 ul > * {
+  font-size: 0.9rem;
   padding: 1rem 0.5rem;
   display: grid;
   place-content: center;
-  background-color: rgb(29, 29, 29);
-  color: white;
+
+  background-color: #ededea;
+  color: black;
 
   border-radius: 0.5rem;
-
   transition: scale 250ms;
 }
 
@@ -118,10 +136,9 @@ ul > *:hover {
 }
 
 .social-links > * {
-  background-color: white;
+  background-color: transparent;
 
   flex: 1;
-  display: inline-block;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,8 +153,10 @@ ul > *:hover {
 }
 
 .social-links a {
+  width: 100%;
+
   text-decoration: none;
-  background-color: white;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,14 +171,4 @@ ul > *:hover {
 
 .social-links img {
   width: 24px;
-}
-
-a {
-  display: grid;
-
-  background-color: red;
-  align-items: center;
-
-  gap: 0.2rem;
-  width: 100%;
 }

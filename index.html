@@ -12,42 +12,49 @@
 
 <body>
   <article data-test-id="test-profile-card" class="card-container">
+
+
+    <div class="image-name-wrapper">
+      <figure class="image-container">
+        <img data-test-id="test-user-avatar" src="assets/avatar.jpeg" alt="User image">
+      </figure>
+
+      <div class="about">
+        <h2 data-test-id="test-user-name" class="user-name" aria-label="My name">Kingsley Udegbunam</h2>
+
+        <p class="role-gmail"><span class="role">Frontend Developer</span> | <span
+            class="mail">infodevkay@gmail.com</span></p>
+
+
+        <p data-test-id="test-user-bio" class="user-bio"> A creative Frontend Developer focused on building sleek
+          experiences that transforms simple websites into something extraordinary.</p>
+      </div>
+    </div>
     <div class="time-container"><span>🕰️ EPOCH: </span>
       <time data-test-id="test-user-time" class="time-display" datetime="" aria-live="polite">
 
       </time>
     </div>
+    <div class="mid-sections">
+      <section data-test-id="test-user-hobbies" class="hobbies">
+        <h3 class="likes-header">Hobbies</h3>
+        <ul>
+          <li>Reading 📖</li>
+          <li>Cooking 👨🏽‍🍳</li>
+          <li>Photography 📸</li>
+          <li>Coding 👨🏽‍💻</li>
+        </ul>
 
-    <figure class="image-container">
-      <img data-test-id="test-user-avatar" src="assets/avatar.jpeg" alt="User image">
-    </figure>
-
-    <div class="about">
-      <h2 data-test-id="test-user-name" class="user-name" aria-label="My name">Kingsley Udegbunam</h2>
-      <p data-test-id="test-user-bio" class="user-bio"> A creative Frontend Developer focused on building sleek
-        experiences that transforms simple websites into something extraordinary.</p>
+      </section>
+      <section data-test-id="test-user-dislikes" class="dislikes">
+        <h3 class="likes-header">Dislikes</h3>
+        <ul>
+          <li>Tricky Bugs 🐛</li>
+          <li>Chaos 👀</li>
+          <li>Cold Coffee ☕</li>
+        </ul>
+      </section>
     </div>
-
-    <p class="timer"></p>
-
-    <section data-test-id="test-user-hobbies" class="hobbies">
-      <h3 class="likes-header">Hobbies</h3>
-      <ul>
-        <li>Reading 📖</li>
-        <li>Cooking 👨🏽‍🍳</li>
-        <li>Photography 📸</li>
-        <li>Coding 👨🏽‍💻</li>
-      </ul>
-
-    </section>
-    <section data-test-id="test-user-dislikes" class="dislikes">
-      <h3 class="likes-header">Dislikes</h3>
-      <ul>
-        <li>Tricky Bugs 🐛</li>
-        <li>Chaos 👀</li>
-        <li>Cold Coffee ☕</li>
-      </ul>
-    </section>
 
     <section>
       <h3 class="likes-header">Socials</h3>
