@@ -172,3 +172,94 @@ ul > *:hover {
 .social-links img {
   width: 24px;
 }
+
+@media screen and (min-width: 800px) {
+  /* CONTAINERS */
+  body {
+    font-size: 1.05rem;
+    padding: 3rem;
+  }
+
+  .time-container {
+    font-size: 0.77rem;
+  }
+
+  .card-container {
+    padding: 2.5rem 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2rem;
+  }
+
+  .mid-sections {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-block: 1.5rem;
+    margin-block: 1.5rem;
+    border-block: 1px solid var(--border-color);
+  }
+
+  section {
+    padding: 0rem;
+  }
+
+  .mid-sections > * {
+    flex: 1;
+    background-color: #ededea;
+    border-radius: 1rem;
+    padding: 1.5rem 1.5rem;
+    border: none;
+  }
+
+  .mid-sections > *:last-child {
+    border: none;
+  }
+
+  .mid-sections ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: flex-start;
+  }
+
+  .image-name-wrapper {
+    display: flex;
+    gap: 1rem;
+    padding-block-end: 1.5rem;
+  }
+
+  .image-container {
+    border-radius: 1rem;
+
+    width: 300px;
+    flex: 1;
+  }
+
+  .about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.5rem;
+    padding-block: 0.5rem 0;
+    flex: 2.2;
+  }
+
+  .social-links {
+    width: 100%;
+  }
+
+  /* TEXTS & LI */
+  h3 {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .mid-sections li {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: black;
+    border: 1.5px solid var(--border-color);
+  }
+}
