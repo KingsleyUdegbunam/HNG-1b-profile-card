@@ -4,7 +4,7 @@ A small, accessible, responsive Profile Card component built with plain HTML, CS
 
 ## Live Demo
 
-[View Live](https://your-live-url.netlify.app) <!-- Replace with your deployed URL -->
+[View Live](https://profile-cardd-hng.netlify.app/) 
 
 ## Features
 
