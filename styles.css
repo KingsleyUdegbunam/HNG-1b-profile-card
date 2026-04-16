@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap");
+
+:root {
+  --card-bg-clr: rgb(26, 26, 26);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+}
+
+/* CONTAINERS */
+.card-container {
+  padding: 4rem 1rem;
+  margin: 0 auto;
+}
+
+.time-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 0.5rem;
+
+  text-align: center;
+  font-size: 0.65rem;
+
+  background-color: var(--card-bg-clr);
+  color: white;
+}
+
+.image-container {
+  width: 200px;
+  object-position: center;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: rosybrown;
+  object-fit: cover;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+section {
+  padding-block: 1.5rem;
+}
+
+/* AVATAR */
+.image-container img {
+  width: 100%;
+  scale: 1.06;
+}
+
+/* HEADERS */
+h2,
+h3 {
+  font-family: "Sora", sans-serif;
+  text-align: center;
+  margin-block-end: 0.2rem;
+}
+
+h3 {
+  margin-block-end: 0.5rem;
+  color: var(--card-bg-clr);
+}
+
+/* NAME & BIO */
+.about {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-block: 1.5rem;
+}
+
+/* LISTS */
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 175px);
+  place-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+ul > * {
+  padding: 1rem 0.5rem;
+  display: grid;
+  place-content: center;
+  background-color: rgb(29, 29, 29);
+  color: white;
+
+  border-radius: 0.5rem;
+
+  transition: scale 250ms;
+}
+
+ul > *:hover {
+  scale: 1.01;
+}
+
+/* SOCIALS */
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  justify-self: center;
+  width: 90%;
+}
+
+.social-links > * {
+  background-color: white;
+
+  flex: 1;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+
+  transition: box-shadow, 250ms;
+}
+
+.social-links > *:hover {
+  box-shadow: 4px 3px 0 0 black;
+}
+
+.social-links a {
+  text-decoration: none;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+
+  gap: 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 1rem 0.5rem;
+}
+
+.social-links img {
+  width: 24px;
+}
+
+a {
+  display: grid;
+
+  background-color: red;
+  align-items: center;
+
+  gap: 0.2rem;
+  width: 100%;
+}
