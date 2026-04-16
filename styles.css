@@ -101,6 +101,7 @@ h3 {
 
 .role-gmail {
   color: rgb(136, 136, 136);
+  font-size: 0.75rem;
 }
 .role,
 .mail {
@@ -269,6 +270,10 @@ ul > *:hover {
     font-weight: 600;
     font-size: 0.9rem;
     text-align: left;
+  }
+
+  .role-gmail {
+    font-size: 0.85rem;
   }
 
   .mid-sections li {
