@@ -5,6 +5,13 @@
   --border-color: rgb(129, 129, 129);
 }
 
+:focus-visible {
+  outline: 2px solid saddlebrown;
+  outline-offset: 3px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 4px rgba(139, 69, 19, 0.2);
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 0.85rem;
